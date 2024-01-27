@@ -1,0 +1,144 @@
+"27-Jan-24 18:56:50" - root - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+"27-Jan-24 18:56:50" - root - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/pyspark/context.py", line 381, in signal_handler
+    self.cancelAllJobs()
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/pyspark/context.py", line 2446, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o27.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+"27-Jan-24 19:33:39" - __main__ - INFO - Spark object crated ...
+"27-Jan-24 19:33:41" - __main__ - INFO - Spark streaming reading beginning ...
+"27-Jan-24 19:33:41" - __main__ - INFO - Spark data manupulation is beginning ...
+"27-Jan-24 19:33:42" - __main__ - INFO - Spark data manupulation is finished ...
+"27-Jan-24 19:33:42" - __main__ - INFO - Streaming query object is beginning ... 
+"27-Jan-24 19:33:42" - __main__ - INFO - Spark stream writing DataFrame[value: string] to resulttopic ...
+"27-Jan-24 19:34:53" - __main__ - INFO - Spark object crated ...
+"27-Jan-24 19:34:55" - __main__ - INFO - Spark streaming reading beginning ...
+"27-Jan-24 19:34:55" - __main__ - INFO - Spark data manupulation is beginning ...
+"27-Jan-24 19:34:56" - __main__ - INFO - Spark data manupulation is finished ...
+"27-Jan-24 19:34:57" - __main__ - INFO - Streaming query object is beginning ... 
+"27-Jan-24 19:34:57" - __main__ - INFO - Spark stream writing DataFrame[value: string] to resulttopic ...
+"27-Jan-24 19:36:10" - root - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+"27-Jan-24 19:36:10" - root - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/pyspark/context.py", line 381, in signal_handler
+    self.cancelAllJobs()
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/pyspark/context.py", line 2446, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o27.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+"27-Jan-24 19:36:17" - __main__ - INFO - Spark object crated ...
+"27-Jan-24 19:36:19" - __main__ - INFO - Spark streaming reading beginning ...
+"27-Jan-24 19:36:19" - __main__ - INFO - Spark data manupulation is beginning ...
+"27-Jan-24 19:36:20" - __main__ - INFO - Spark data manupulation is finished ...
+"27-Jan-24 19:36:21" - __main__ - INFO - Streaming query object is beginning ... 
+"27-Jan-24 19:36:21" - __main__ - INFO - Spark stream writing DataFrame[value: string] to resulttopic ...
+"27-Jan-24 19:36:38" - __main__ - INFO - Spark object crated ...
+"27-Jan-24 19:36:41" - __main__ - INFO - Spark streaming reading beginning ...
+"27-Jan-24 19:36:41" - __main__ - INFO - Spark data manupulation is beginning ...
+"27-Jan-24 19:36:41" - __main__ - INFO - Spark data manupulation is finished ...
+"27-Jan-24 19:36:42" - __main__ - INFO - Streaming query object is beginning ... 
+"27-Jan-24 19:36:42" - __main__ - INFO - Spark stream writing DataFrame[value: string] to resulttopic ...
+"27-Jan-24 19:39:24" - root - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+"27-Jan-24 19:39:24" - root - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/pyspark/context.py", line 381, in signal_handler
+    self.cancelAllJobs()
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/pyspark/context.py", line 2446, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o27.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/hadoop-user/projects/cons-spark/conssparkstr/lib/python3.8/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
